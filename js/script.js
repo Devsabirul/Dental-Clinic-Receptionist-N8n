@@ -147,7 +147,7 @@
     const messageElement = chatElement.querySelector("p");
 
     try {
-      const response = await fetch("https://n8n.wowvaiya.shop/webhook-test/getInput", {
+      const response = await fetch("https://n8n.wowvaiya.shop/webhook/getInput", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: message, chatId: chatId, })
